@@ -687,11 +687,11 @@ if __name__ == "__main__":
     colnames_radec2 = colnames_radec_gaia
 
     plotfile_label='galex_xnn_gaia'
-    idx1, idx2, rsep = xmatch_cat(table1=data1, table2=data2,
-                                  colnames_radec1=colnames_radec1,
-                                  colnames_radec2=colnames_radec2,
-                                  stats=True,
-                                  nthneighbor=1)
+    idx1, rsep = xmatch_cat(table1=data1, table2=data2,
+                            colnames_radec1=colnames_radec1,
+                            colnames_radec2=colnames_radec2,
+                            stats=True,
+                            nthneighbor=1)
 
     # reverse the direction
     data1 = gaia
@@ -702,7 +702,7 @@ if __name__ == "__main__":
 
     rmax = 90.0
     plotfile_label='gaia_xnn_galex'
-    idx1, idx2, rsep = xmatch_cat(data1=data1, data2=data2,
+    idx1, rsep = xmatch_cat(data1=data1, data2=data2,
                               colnames_radec1=colnames_radec1,
                               colnames_radec2=colnames_radec2,
                               units_radec1=['degree', 'degree'],
@@ -827,7 +827,7 @@ if __name__ == "__main__":
     colnames_radec2 = colnames_radec_gaia
 
     plotfile_label='xxl_source_xnn_gaia'
-    idx1, idx2, rsep = xmatch_cat(data1=data1, data2=data2,
+    idx1, rsep = xmatch_cat(data1=data1, data2=data2,
                               colnames_radec1=colnames_radec1,
                               colnames_radec2=colnames_radec2,
                               xmatch_rmax=None,
