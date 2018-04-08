@@ -246,10 +246,6 @@ if __name__ == "__main__":
                                 colnames_radec1=colnames_radec1,
                                 colnames_radec2=colnames_radec2)
 
-    ra1 =
-    dec1 =
-    ra2 =
-    dec2 =
     add_columns_spherical_offsets(table=None,
                                   ra1=None, dec1=None,
                                   ra2=None, dec2=None,
